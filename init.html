@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sankey Diagram from Excel</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h3>Upload an Excel File</h3>
+    <input type="file" id="uploadFile" accept=".xlsx, .xls" />
+    <input type="text" id="sheetName" placeholder="Sheet Name" />
+    <input type="number" id="sourceCol" placeholder="Source Column" />
+    <input type="number" id="targetCol" placeholder="Target Column" />
+    <input type="number" id="valueCol" placeholder="Value Column" />
+    <input type="number" id="percentCol" placeholder="Percent Column" />
+    <button id="generateSankey">Generate Sankey Diagram</button>
+    <button id="saveSankey">Save Sankey Diagram</button>
+    
+    <div id="sankeyDiagram" style="width:100%; height:600px;"></div>
+
+    <script src="sankeyGenerator.js"></script>
+</body>
+</html>
