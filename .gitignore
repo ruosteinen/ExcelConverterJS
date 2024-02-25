@@ -1,0 +1,36 @@
+# Dependency directory
+node_modules/
+
+# Environment configuration files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug log from npm
+npm-debug.log*
+
+# Yarn error logs
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache & logs
+.npm
+*.log
+
+# Optional eslint cache
+.eslintcache
+
+# Optional: .next/ directory for Next.js project
+.next/
+
+# Optional: dist/ directory for output of build process
+dist/
+
+# Optional: coverage/ directory for code coverage report
+coverage/
